@@ -1,0 +1,14 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+  border-radius: 12px;
+
+  > app-game-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}

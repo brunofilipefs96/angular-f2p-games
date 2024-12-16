@@ -1,0 +1,13 @@
+<mat-card class="game-card">
+  <img mat-card-image [src]="game().thumbnail" [alt]="game().title" />
+  <mat-card-title>{{ game().title }}</mat-card-title>
+  <mat-card-subtitle>{{ game().genre }}</mat-card-subtitle>
+  <mat-card-content>
+    <p>{{ game().short_description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" [routerLink]="['/game', game().id]">
+      View Details
+    </button>
+  </mat-card-actions>
+</mat-card>

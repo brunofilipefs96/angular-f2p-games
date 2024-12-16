@@ -1,0 +1,27 @@
+<div class="game-details-container">
+  <div class="back-button">
+    <button mat-icon-button color="primary" routerLink="/games">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+
+  <div class="game-details">
+    <h1>{{ game.title }}</h1>
+    <img [src]="game.thumbnail" [alt]="game.title" />
+    <p>{{ game.short_description }}</p>
+
+    <div class="game-info">
+      <ul>
+        <li><strong>Genre:</strong> {{ game.genre }}</li>
+        <li><strong>Platform:</strong> {{ game.platform }}</li>
+        <li><strong>Developer:</strong> {{ game.developer }}</li>
+        <li><strong>Publisher:</strong> {{ game.publisher }}</li>
+        <li><strong>Release Date:</strong> {{ game.release_date }}</li>
+      </ul>
+    </div>
+
+    <a mat-raised-button color="accent" [href]="game.game_url" target="_blank">
+      Play Now
+    </a>
+  </div>
+</div>

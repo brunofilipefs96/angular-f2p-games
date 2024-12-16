@@ -1,0 +1,30 @@
+<div class="filters">
+    <mat-form-field appearance="fill" class="category-select">
+        <mat-label>Category</mat-label>
+        <mat-select [(ngModel)]="selectedCategory" (selectionChange)="onFiltersChanged()">
+            <mat-option [value]="undefined">All</mat-option>
+            <mat-option *ngFor="let category of categories()" [value]="category">
+                {{ category }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="platform-select">
+        <mat-label>Platform</mat-label>
+        <mat-select [(ngModel)]="selectedPlatform" (selectionChange)="onFiltersChanged()">
+            <mat-option [value]="undefined">All</mat-option>
+            <mat-option *ngFor="let platform of platforms()" [value]="platform">
+                {{ platform }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="sort-select">
+        <mat-label>Sort By</mat-label>
+        <mat-select [(ngModel)]="selectedSort" (selectionChange)="onFiltersChanged()">
+            <mat-option [value]="'relevance'">Relevance</mat-option>
+            <mat-option [value]="'release-date'">Release Date</mat-option>
+            <mat-option [value]="'alphabetical'">Alphabetical</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

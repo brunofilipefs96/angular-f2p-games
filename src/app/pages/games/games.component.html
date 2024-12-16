@@ -1,0 +1,26 @@
+<div class="games">
+    <div class="header">
+        <h1>
+            Explore <span>All Games</span>
+        </h1>
+        <p class="tagline">Browse and filter through a wide selection of free-to-play games!</p>
+    </div>
+
+    <app-filter
+            [categories]="categories"
+            [platforms]="platforms"
+            (filtersChanged)="applyFilters($event)"
+    ></app-filter>
+
+    <div *ngIf="games.length > 0">
+        <app-game-list [games]="games"></app-game-list>
+    </div>
+
+    <div class="loading" *ngIf="isLoading">
+        <mat-spinner></mat-spinner>
+    </div>
+
+    <div *ngIf="!isLoading && games.length === 0" class="no-results">
+        <p>No games match the selected filters.</p>
+    </div>
+</div>

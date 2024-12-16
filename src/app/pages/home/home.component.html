@@ -1,0 +1,23 @@
+<div class="home-container">
+    <video
+        #backgroundVideo
+        autoplay
+        muted
+        loop
+        playsinline
+        class="background-video"
+    >
+        <source src="videos/home-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content-overlay">
+        <h1 class="title">
+            Free-to-Play Games
+        </h1>
+        <p class="tagline">Dive into the world of free gaming adventures!</p>
+        <button mat-raised-button color="primary" class="cta-button" routerLink="/games">
+            Explore Games
+        </button>
+    </div>
+</div>

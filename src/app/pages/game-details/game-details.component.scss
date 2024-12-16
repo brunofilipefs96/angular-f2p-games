@@ -1,0 +1,111 @@
+.game-details-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 16px;
+  margin: 32px 32px;
+  padding: 16px;
+  background: rgba(30, 39, 50, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-button {
+  display: flex;
+  justify-content: flex-start;
+
+  button {
+    color: #80deea;
+    background: rgba(30, 39, 50, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    mat-icon {
+      font-size: 24px;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.game-details {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  justify-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #00e5ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #b3e5fc;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 16px;
+    background: rgba(40, 50, 65, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        color: #f1f1f1;
+
+        strong {
+          color: #80deea;
+        }
+      }
+    }
+  }
+
+  a {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    padding: 8px 24px;
+    background: #00e5ff;
+    color: #263238;
+    border-radius: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
