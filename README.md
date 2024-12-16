@@ -9,6 +9,7 @@ Explore and discover the best free-to-play games for PC and browser, all present
 ## **Features**
 - 🕹️ Browse a comprehensive list of free-to-play games.
 - 🎮 Filter games by **category** (e.g., MMORPG, Shooter) and **platform** (e.g., PC, Browser).
+- 🔀 Sorter games by **relevance**, **release date** and **alphabetical**.
 - 🌐 Modern design with responsive layouts and animations.
 - 🔍 Detailed game pages with information about genre, platform, and publishers.
 
